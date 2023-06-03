@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 wang, 1, LIC=VGXG8-3TBJX-HLACL-079E6-FK8D6-L7BQZ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\motorcontrol\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\motorcontrol\4\Noname\MDK-ARM\Noname.uvprojx
+Project File Date:  05/24/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\motorcontrol\keil\ARM\ARMCC\Bin'
+Build target 'Noname'
+compiling sto_pll_speed_pos_fdbk.c...
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(86): warning:  #9-D: nested comment is not allowed
+    int16_t  hF2;                 /*!< Variable containing state observer scaling factor F2/!< 状态观测器缩放因子F2 /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(92): warning:  #9-D: nested comment is not allowed
+                                       PLL implementation  /!< PI调节器组件句柄，用于PLL实现 /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(93): warning:  #9-D: nested comment is not allowed
+    int32_t Ialfa_est;           /*!< Estimated Ialfa current in int32 format /!< 以int32格式估计的Ialfa电流 /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(94): warning:  #9-D: nested comment is not allowed
+    int32_t Ibeta_est;           /*!< Estimated Ibeta current in int32 format /!< 以int32格式估计的Ibeta电流 /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(95): warning:  #9-D: nested comment is not allowed
+    int32_t wBemf_alfa_est;       /*!< Estimated B-emf alfa in int32_t format /!< 以int32_t格式估计的BEMF（反电动势） alfa /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(96): warning:  #9-D: nested comment is not allowed
+    int32_t wBemf_beta_est;       /*!< Estimated B-emf beta in int32_t format /!< 以int32_t格式估计的BEMF beta /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(97): warning:  #9-D: nested comment is not allowed
+    int16_t hBemf_alfa_est;       /*!< Estimated B-emf alfa in int16_t format /!< 以int16_t格式估计的BEMF alfa /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(98): warning:  #9-D: nested comment is not allowed
+    int16_t hBemf_beta_est;       /*!< Estimated B-emf beta in int16_t format /!< 以int16_t格式估计的BEMF beta /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(100): warning:  #9-D: nested comment is not allowed
+                                       SpeedBufferSizeDpp speed measurements/!< 估计的DPP速度FIFO，包含最新的SpeedBufferSizeDpp速度测量值 /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(102): warning:  #9-D: nested comment is not allowed
+                                       estimated speed FIFO /!< 估计速度FIFO中最新速度估计的位置 /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(110): warning:  #9-D: nested comment is not allowed
+                                       validation /!< 启动验证中通过的连续测试次数计数器 /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(111): warning:  #9-D: nested comment is not allowed
+    uint8_t ReliabilityCounter; /*!< Counter for reliability check /!< 可靠性检查计数器 /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(121): warning:  #9-D: nested comment is not allowed
+    bool EnableDualCheck;        /*!< Consistency check enabler/!< 一致性检查使能器 /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_pll_speed_pos_fdbk.h(122): warning:  #9-D: nested comment is not allowed
+    int32_t DppBufferSum;        /*!< summation of speed buffer elements [dpp]/!< 速度缓冲区元素之和[dpp] /*/
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_pll_speed_pos_fdbk.c(502): warning:  #186-D: pointless comparison of unsigned integer with zero
+    for (i = AverageFilter_Size-1; i >= 0; i--)//读速度数组里面的单元进行求和
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_pll_speed_pos_fdbk.c(1454): warning:  #940-D: missing return statement at end of non-void function "update_E" 
+  }
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_pll_speed_pos_fdbk.c(1422): warning:  #177-D: variable "wIalfa_est_Next"  was declared but never referenced
+  	 int32_t wIalfa_est_Next;//定义的alfa电流估计值
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_pll_speed_pos_fdbk.c(1423): warning:  #177-D: variable "wIbeta_est_Next"  was declared but never referenced
+     int32_t wIbeta_est_Next;//定义的beta电流估计值
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_pll_speed_pos_fdbk.c(1426): warning:  #550-D: variable "speed"  was set but never used
+  	int16_t speed;
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_pll_speed_pos_fdbk.c(1400): warning:  #177-D: function "fanzhengqie"  was declared but never referenced
+  static inline int16_t fanzhengqie(int32_t wBemf_alfa_est, int32_t wBemf_beta_est)//反正切求解角度
+../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_pll_speed_pos_fdbk.c: 20 warnings, 0 errors
+linking...
+Program Size: Code=37340 RO-data=1240 RW-data=1700 ZI-data=7220  
+FromELF: creating hex file...
+"Noname\Noname.axf" - 0 Error(s), 20 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.4.0.pack
+                Keil.STM32G4xx_DFP.1.4.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Noname
+  D:\motorcontrol\keil\pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  D:\motorcontrol\keil\pack\Keil\STM32G4xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
